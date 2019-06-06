@@ -133,7 +133,10 @@
       "profile": "http://maxcubing.wordpress.com",
       "contributions": [
         "code",
-        "maintenance"
+        "maintenance",
+        "ideas",
+        "doc",
+        "test"
       ]
     }
   ],
