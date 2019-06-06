@@ -1,0 +1,30 @@
+module.exports = {
+  plugins: [
+    [
+      '@semantic-release/commit-analyzer',
+      {
+        preset: 'eslint'
+      }
+    ],
+    [
+      '@semantic-release/release-notes-generator',
+      {
+        preset: 'eslint'
+      }
+    ],
+    [
+      '@semantic-release/changelog',
+      {
+        changelogFile: 'CHANGELOG.md'
+      }
+    ],
+    '@semantic-release/github',
+    [
+      '@semantic-release/git',
+      {
+        message: 'Chore: Release ${nextRelease.version} :tada: [skip ci]\n\n${nextRelease.notes}'
+      }
+    ],
+    '@semantic-release/npm'
+  ]
+};

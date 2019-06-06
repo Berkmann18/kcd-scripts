@@ -29,8 +29,11 @@ Usage: ../ [script] [--flags]
 Available Scripts:
   build
   format
+  lint-css
+  lint-md
   lint
   pre-commit
+  release
   security
   test
   validate

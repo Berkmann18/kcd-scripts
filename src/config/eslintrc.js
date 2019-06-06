@@ -1,4 +1,4 @@
-const {ifAnyDep} = require('../utils')
+const {ifAnyDep} = require('../utils');
 
 module.exports = {
   env: {node: true, jest: true},
@@ -10,8 +10,8 @@ module.exports = {
     'plugin:node/recommended',
     ...[
       ifAnyDep('react', require.resolve('eslint-config-kentcdodds/jsx-a11y')),
-      ifAnyDep('react', require.resolve('eslint-config-kentcdodds/react')),
-    ].filter(Boolean),
+      ifAnyDep('react', require.resolve('eslint-config-kentcdodds/react'))
+    ].filter(Boolean)
   ],
   rules: {
     indent: ['error', 2],
@@ -19,10 +19,10 @@ module.exports = {
     'no-console': 'warn',
     quotes: ['error', 'single'],
     'no-trailing-spaces': ['error'],
-    'symbol-description': ['warn'],
+    'symbol-description': ['warn']
   },
   parserOptions: {
     sourceType: 'module',
-    ecmaVersion: 8,
-  },
-}
+    ecmaVersion: 8
+  }
+};

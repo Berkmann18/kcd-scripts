@@ -1,0 +1,18 @@
+{
+  "plugins": [
+    ["@semantic-release/commit-analyzer", {
+      "preset": "angular"
+    }],
+    ["@semantic-release/release-notes-generator", {
+      "preset": "angular"
+    }],
+    ["@semantic-release/changelog", {
+      "changelogFile": "CHANGELOG.md"
+    }],
+    "@semantic-release/github",
+    ["@semantic-release/git", {
+      "message": "chore: Release ${nextRelease.version} :tada: [skip ci]\n\n${nextRelease.notes}"
+    }],
+    "@semantic-release/npm"
+  ]
+}
