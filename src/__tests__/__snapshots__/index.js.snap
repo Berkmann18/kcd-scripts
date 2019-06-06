@@ -33,7 +33,6 @@ Available Scripts:
   pre-commit
   security
   test
-  travis-after-success
   validate
 
 Options:
