@@ -13,6 +13,7 @@ install:
 script:
   - snyk auth $SNYK_TOKEN
   - npm run validate
+  - npm run sec
   - codecov
 after_success:
   - snyk monitor

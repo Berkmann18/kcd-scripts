@@ -10,7 +10,7 @@
     "mb-scripts": "dist/index.js"
   },
   "scripts": {
-    "sec": "snyk test",
+    "sec": "node src security",
     "test": "node src test",
     "test:update": "node src test --updateSnapshot",
     "build": "node src build",
