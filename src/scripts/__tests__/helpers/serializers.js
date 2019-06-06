@@ -1,25 +1,31 @@
-import slash from 'slash'
+const slash = require('slash');
 
 // this removes the quotes around strings...
-export const unquoteSerializer = {
+const unquoteSerializer = {
   print: val => val,
-  test: val => typeof val === 'string',
-}
+  test: val => typeof val === 'string'
+};
 
 // this converts windows style file paths to unix...
-export const winPathSerializer = {
+const winPathSerializer = {
   print: val => slash(val),
-  test: val => typeof val === 'string' && val.includes('\\'),
-}
+  test: val => typeof val === 'string' && val.includes('\\')
+};
 
-export const relativePathSerializer = {
+const relativePathSerializer = {
   print: val => normalizePaths(val),
-  test: val => normalizePaths(val) !== val,
-}
+  test: val => normalizePaths(val) !== val
+};
 
 function normalizePaths(value) {
   if (typeof value !== 'string') {
-    return value
+    return value;
   }
-  return slash(value.split(process.cwd()).join('<PROJECT_ROOT>'))
+  return slash(value.split(process.cwd()).join('<PROJECT_ROOT>'));
 }
+
+module.exports = {
+  unquoteSerializer,
+  winPathSerializer,
+  relativePathSerializer
+};

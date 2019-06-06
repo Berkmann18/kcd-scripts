@@ -13,10 +13,10 @@ const {package: pkg, path: pkgPath} = readPkgUp.sync({
 const appDirectory = path.dirname(pkgPath)
 
 function resolveKcdScripts() {
-  if (pkg.name === 'kcd-scripts') {
+  if (pkg.name === 'mb-scripts') {
     return require.resolve('./').replace(process.cwd(), '.')
   }
-  return resolveBin('kcd-scripts')
+  return resolveBin('mb-scripts')
 }
 
 // eslint-disable-next-line complexity
