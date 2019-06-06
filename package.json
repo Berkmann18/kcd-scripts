@@ -109,6 +109,10 @@
     "yargs-parser": "^13.1.0"
   },
   "eslintConfig": {
+    "env": {
+      "node": true,
+      "jest": true
+    },
     "extends": [
       "eslint:recommended",
       "plugin:security/recommended",

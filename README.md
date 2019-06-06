@@ -92,15 +92,15 @@ Or, for `babel`, a `.babelrc` with:
 Or, for `jest`:
 
 ```javascript
-const {jest: jestConfig} = require('mb-scripts/config')
+const {jest: jestConfig} = require('mb-scripts/config');
 module.exports = Object.assign(jestConfig, {
   // your overrides here
 
   // for test written in Typescript, add:
   transform: {
-    '\\.(ts|tsx)$': '<rootDir>/node_modules/ts-jest/preprocessor.js',
-  },
-})
+    '\\.(ts|tsx)$': '<rootDir>/node_modules/ts-jest/preprocessor.js'
+  }
+});
 ```
 
 > Note: `mb-scripts` intentionally does not merge things for you when you start
