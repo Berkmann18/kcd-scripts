@@ -16,6 +16,7 @@
     "build": "node src build",
     "lint": "node src lint",
     "lint:css": "node src lint-css",
+    "lint:md": "node src lint-md",
     "format": "node src format",
     "validate": "node src validate",
     "prepare": "snyk protect"

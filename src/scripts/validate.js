@@ -15,7 +15,7 @@ const scripts = useDefaultScripts
       build: ifScript('build', 'npm run build --silent'),
       lint: preCommit ? null : ifScript('lint', 'npm run lint --silent'),
       lintCSS: preCommit ? null : ifScript('lint-css', 'npm run lint:css --silent'),
-      // lintMd: preCommit ? null : ifScript('lint-md', 'npm run lint:md --silent'),
+      lintMd: preCommit ? null : ifScript('lint-md', 'npm run lint:md --silent'),
       test: preCommit ? null : ifScript('test', 'npm t --silent -- --coverage'),
       flow: ifScript('flow', 'npm run flow --silent')
     }
