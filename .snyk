@@ -1,0 +1,13 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  'npm:bl:20160119':
+    - rollup-plugin-node-builtins > browserify-fs > levelup > bl:
+        reason: None given
+        expires: '2019-07-06T10:55:51.508Z'
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:semver:20150403':
+    - rollup-plugin-node-builtins > browserify-fs > levelup > semver:
+        patched: '2019-06-06T10:51:28.362Z'

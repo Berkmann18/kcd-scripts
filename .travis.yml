@@ -1,14 +1,34 @@
-sudo: false
 language: node_js
 cache:
   directories:
-    - node_modules
+    - ~/.npm
 notifications:
   email: false
 node_js:
-  - '8'
-script: npm run validate
-after_success: node src travis-after-success
+  - 'stable'
+  - 'lts/*'
+install:
+  - npm ci
+  - npm i -g codecov
+script:
+  - snyk auth $SNYK_TOKEN
+  - npm run validate
+  - codecov
+after_success:
+  - snyk monitor
+jobs:
+  include:
+    - stage: release
+      node_js: 'node'
+      script: skip
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script: npm run semantic-release
 branches:
-  only:
-    - master
+  except:
+    - /^v\d+\.\d+\.\d+$/
+stages:
+  - name: test
+  - name: release
+    if: branch = master
