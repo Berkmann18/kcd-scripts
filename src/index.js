@@ -2,7 +2,7 @@
 let shouldThrow
 try {
   shouldThrow =
-    require(`${process.cwd()}/package.json`).name === 'kcd-scripts' &&
+    require(`${process.cwd()}/package.json`).name === 'mb-scripts' &&
     Number(process.version.slice(1).split('.')[0]) < 8
 } catch (error) {
   // ignore
