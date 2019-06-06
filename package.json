@@ -120,8 +120,9 @@
       "plugin:node/recommended"
     ],
     "rules": {
-      "no-process-exit": "off",
-      "no-console": "off"
+      "node/shebang": "off",
+      "no-console": "off",
+      "no-process-exit": "off"
     }
   },
   "eslintIgnore": [
