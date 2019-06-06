@@ -83,9 +83,6 @@ contents of:
 {"extends": "./node_modules/mb-scripts/eslint.js"}
 ```
 
-> Note: for now, you'll have to include an `.eslintignore` in your project until
-> [this eslint issue is resolved](https://github.com/eslint/eslint/issues/9227).
-
 Or, for `babel`, a `.babelrc` with:
 
 ```
