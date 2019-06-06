@@ -6,19 +6,37 @@
 
 <hr />
 
-[![Build Status][build-badge]][build]
-[![Code Coverage][coverage-badge]][coverage]
-[![version][version-badge]][package]
-[![downloads][downloads-badge]][npmcharts]
-[![MIT License][license-badge]][license]
+[![NPM](https://nodei.co/npm/mb-scripts.png)](https://nodei.co/npm/mb-scripts/)
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors)
-[![PRs Welcome][prs-badge]][prs]
-[![Code of Conduct][coc-badge]][coc]
+[![GitHub package version](https://img.shields.io/github/package-json/v/Berkmann18/mb-scripts.svg)](https://github.com/Berkmann18/mb-scripts)
+[![devDependencies Status](https://david-dm.org/berkmann18/mb-scripts/dev-status.svg)](https://david-dm.org/berkmann18/mb-scripts?type=dev)
+[![dependencies Status](https://david-dm.org/berkmann18/mb-scripts/status.svg)](https://david-dm.org/berkmann18/mb-scripts)
 
-[![Watch on GitHub][github-watch-badge]][github-watch]
-[![Star on GitHub][github-star-badge]][github-star]
-[![Tweet][twitter-badge]][twitter]
+[![GH Downloads](https://img.shields.io/github/downloads/Berkmann18/mb-scripts/total.svg)](https://github.com/Berkmann18/mb-scripts/network/members)
+[![GitHub commit activity the past year](https://img.shields.io/github/commit-activity/y/Berkmann18/mb-scripts.svg)](https://github.com/Berkmann18/mb-scripts/graphs/commit-activity)
+[![GitHub contributors](https://img.shields.io/github/contributors/Berkmann18/mb-scripts.svg)](https://github.com/Berkmann18/mb-scripts/graphs/contributors)
+[![Github search hit counter](https://img.shields.io/github/search/Berkmann18/mb-scripts/goto.svg)](https://github.com/Berkmann18/mb-scripts/graphs/traffic)
+
+[![Build Status](https://img.shields.io/travis/Berkmann18/mb-scripts.svg?style=flat-rounded)](https://travis-ci.org/Berkmann18/mb-scripts)
+[![Code Coverage](https://img.shields.io/codecov/c/github/Berkmann18/mb-scripts.svg?style=flat-rounded)](https://codecov.io/github/Berkmann18/mb-scripts)
+[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
+[![Known Vulnerabilities](https://snyk.io/test/github/Berkmann18/mb-scripts/badge.svg?targetFile=package.json)](https://snyk.io/test/github/Berkmann18/mb-scripts?targetFile=package.json)
+
+[![GitHub](https://img.shields.io/github/license/Berkmann18/mb-scripts.svg)](https://github.com/Berkmann18/mb-scripts/blob/master/LICENSE)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Berkmann18/mb-scripts/issues)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
+[![GitHub top language](https://img.shields.io/github/languages/top/Berkmann18/mb-scripts.svg)](https://github.com/Berkmann18/mb-scripts)
+[![GitHub language count](https://img.shields.io/github/languages/count/Berkmann18/mb-scripts.svg)](https://github.com/Berkmann18/mb-scripts)
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Berkmann18/mb-scripts.svg)](https://github.com/Berkmann18/mb-scripts)
+
+[![BCH compliance](https://bettercodehub.com/edge/badge/Berkmann18/mb-scripts?branch=master)](https://bettercodehub.com/results/Berkmann18/mb-scripts)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2a8e3e98d3bb47f29abbc3df7174675d)](https://app.codacy.com/app/maxieberkmann/mb-scripts?utm_source=github.com&utm_medium=referral&utm_content=Berkmann18/mb-scripts&utm_campaign=Badge_Grade_Dashboard)
+
+[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-rounded)](#contributors)
+[![Code of Conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-rounded)](<[[coc]](https://github.com/Berkmann18/mb-scripts/blob/master/other/CODE_OF_CONDUCT.md)>)
+
+[![Tweet](https://img.shields.io/twitter/url/https/github.com/Berkmann18/mb-scripts.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20out%20mb-scripts!%20https://github.com/Berkmann18/mb-scripts%20%F0%9F%91%8D)
 
 ## The problem
 
@@ -46,8 +64,7 @@ for linting, testing, building, and more.
 
 ## Installation
 
-This module is distributed via [npm][npm] which is bundled with [node][node] and
-should be installed as one of your project's `devDependencies`:
+This module is distributed via [`npm`] which is bundled with [`node`] and should be installed as one of your project's `devDependencies`:
 
 ```
 npm install --save-dev mb-scripts
@@ -113,12 +130,12 @@ If the `flow-bin` is a dependency on the project the `@babel/preset-flow` will a
 
 ## Other Solutions
 
-I'm not aware of any, if you are please [make a pull request][prs] and add it
+I'm not aware of any, if you are please [make a pull request](http://makeapullrequest.com) and add it
 here! Again, this is a very specific-to-me solution.
 
 ## Contributors
 
-Thanks goes to these people ([emoji key][emojis]):
+Thanks goes to these people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
@@ -126,7 +143,7 @@ Thanks goes to these people ([emoji key][emojis]):
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors][all-contributors] specification.
+This project follows the [all-contributors] specification.
 Contributions of any kind welcome!
 
 ## LICENSE
@@ -135,26 +152,4 @@ MIT
 
 [npm]: https://www.npmjs.com/
 [node]: https://nodejs.org
-[build-badge]: https://img.shields.io/travis/Berkmann18/mb-scripts.svg?style=flat-square
-[build]: https://travis-ci.org/Berkmann18/mb-scripts
-[coverage-badge]: https://img.shields.io/codecov/c/github/Berkmann18/mb-scripts.svg?style=flat-square
-[coverage]: https://codecov.io/github/Berkmann18/mb-scripts
-[version-badge]: https://img.shields.io/npm/v/mb-scripts.svg?style=flat-square
-[package]: https://www.npmjs.com/package/mb-scripts
-[downloads-badge]: https://img.shields.io/npm/dm/mb-scripts.svg?style=flat-square
-[npmcharts]: http://npmcharts.com/compare/mb-scripts
-[license-badge]: https://img.shields.io/npm/l/mb-scripts.svg?style=flat-square
-[license]: https://github.com/Berkmann18/mb-scripts/blob/master/LICENSE
-[prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
-[prs]: http://makeapullrequest.com
-[donate-badge]: https://img.shields.io/badge/$-support-green.svg?style=flat-square
-[coc-badge]: https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square
-[coc]: https://github.com/Berkmann18/mb-scripts/blob/master/other/CODE_OF_CONDUCT.md
-[github-watch-badge]: https://img.shields.io/github/watchers/Berkmann18/mb-scripts.svg?style=social
-[github-watch]: https://github.com/Berkmann18/mb-scripts/watchers
-[github-star-badge]: https://img.shields.io/github/stars/Berkmann18/mb-scripts.svg?style=social
-[github-star]: https://github.com/Berkmann18/mb-scripts/stargazers
-[twitter]: https://twitter.com/intent/tweet?text=Check%20out%20mb-scripts!%20https://github.com/Berkmann18/mb-scripts%20%F0%9F%91%8D
-[twitter-badge]: https://img.shields.io/twitter/url/https/github.com/Berkmann18/mb-scripts.svg?style=social
-[emojis]: https://allcontributors.org/docs/en/emoji-key
 [all-contributors]: https://github.com/all-contributors/all-contributors
