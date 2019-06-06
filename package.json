@@ -15,6 +15,7 @@
     "test:update": "node src test --updateSnapshot",
     "build": "node src build",
     "lint": "node src lint",
+    "lint:css": "node src lint-css",
     "format": "node src format",
     "validate": "node src validate",
     "prepare": "snyk protect"
