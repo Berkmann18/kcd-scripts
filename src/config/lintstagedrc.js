@@ -7,7 +7,12 @@ module.exports = {
   concurrent: false,
   linters: {
     'README.md': [`${doctoc} --maxlevel 3 --notitle`, 'git add'],
-    '*.+(js|jsx|json|yml|yaml|ts|tsx|graphql)': [
+    '*.+json': [
+      isOptedOut('autoformat', '', `${kcdScripts} format`),
+      //@todo Add json-fixer here
+      isOptedOut('autoformat', '', 'git add')
+    ],
+    '*.+(js|jsx|yml|yaml|ts|tsx|graphql)': [
       isOptedOut('autoformat', null, `${kcdScripts} format`),
       `${kcdScripts} lint --fix`,
       `${kcdScripts} test --findRelatedTests`,
