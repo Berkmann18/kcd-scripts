@@ -19,7 +19,7 @@
     "lint:md": "node src lint-md",
     "format": "node src format",
     "validate": "node src validate",
-    "prepare": "snyk protect",
+    "prepare": "snyk protect --debug",
     "sr": "node src release"
   },
   "husky": {
